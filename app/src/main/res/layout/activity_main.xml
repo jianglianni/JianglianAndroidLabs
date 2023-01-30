@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
- <LinearLayout
+<LinearLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:addroid="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.MainActivity"
-    android:orientation = "vertical">
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,6 +28,48 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:text="@string/ButtonText"
-        android:id="@+id/mybutton"  />
+        android:id="@+id/mybutton"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CheckBox"
+        android:text="@string/questionText"
+        />
 
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Switch1"
+        android:text="@string/questionText">
+    </androidx.appcompat.widget.SwitchCompat>
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:text="Yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        </RadioButton>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/radioButton2">
+    </RadioButton>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:contentDescription="image"
+        android:src="@drawable/logo_algonquin">
+    </ImageView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="image"
+        android:src="@drawable/logo_algonquin"
+        android:id="@+id/myimagebutton">
+    </ImageButton>
 </LinearLayout>
