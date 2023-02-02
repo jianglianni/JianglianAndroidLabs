@@ -3,7 +3,7 @@
     <style name="Theme.JiangliansAndroidLabs" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/my_primary</item>
-        <item name="android:colorSecondary">@color/my_secondary</item>
+        <item name="android:colorSecondary" tools:targetApi="n_mr1">@color/my_secondary</item>
         <item name="android:statusBarColor">@color/my_statusbar</item>
 
         <item name="colorAccent">@color/teal_200</item>
